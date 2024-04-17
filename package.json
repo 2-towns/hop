@@ -1,0 +1,34 @@
+{
+  "name": "hop",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Hop is a simple Node JS framework proving integration with HTMX and couple of guideline to build applications in one way. ",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc --watch",
+    "test": "node --test ./dist/*/*.spec.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "HTMX"
+  ],
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "author": "Arnaud  Deville",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mime-types": "^2.1.4",
+    "@types/node": "^20.11.30"
+  },
+  "dependencies": {
+    "etag": "^1.8.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
